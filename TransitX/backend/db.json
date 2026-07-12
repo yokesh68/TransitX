@@ -1,0 +1,50 @@
+{
+  "users": [
+    { "email": "manager@transitops.com", "password": "admin123", "name": "Sarah Connor", "role": "Fleet Manager" },
+    { "email": "driver@transitops.com", "password": "driver123", "name": "Alex Mercer", "role": "Driver" },
+    { "email": "safety@transitops.com", "password": "safety123", "name": "Marcus Wright", "role": "Safety Officer" },
+    { "email": "analyst@transitops.com", "password": "analyst123", "name": "Elena Fisher", "role": "Financial Analyst" }
+  ],
+  "vehicles": [
+    { "regNumber": "VAN-05", "name": "Ford Transit 2022", "type": "Van", "maxCapacity": 500, "odometer": 12500, "acquisitionCost": 32000.00, "status": "Available", "region": "North" },
+    { "regNumber": "TRK-12", "name": "Volvo FH16 Heavy Duty", "type": "Truck", "maxCapacity": 5000, "odometer": 85000, "acquisitionCost": 115000.00, "status": "Available", "region": "South" },
+    { "regNumber": "SED-01", "name": "Toyota Camry 2021", "type": "Sedan", "maxCapacity": 300, "odometer": 45000, "acquisitionCost": 24000.00, "status": "Available", "region": "East" },
+    { "regNumber": "SUV-08", "name": "Chevrolet Suburban", "type": "SUV", "maxCapacity": 800, "odometer": 62000, "acquisitionCost": 55000.00, "status": "In Shop", "region": "West" },
+    { "regNumber": "TRK-09", "name": "Scania R500", "type": "Truck", "maxCapacity": 4500, "odometer": 112000, "acquisitionCost": 98000.00, "status": "Retired", "region": "North" }
+  ],
+  "drivers": [
+    { "licenseNumber": "DL-837482", "name": "Alex Mercer", "category": "Class A", "expiryDate": "2027-10-15", "contact": "+1-555-0199", "safetyScore": 92, "status": "Available" },
+    { "licenseNumber": "DL-928472", "name": "Sarah Connor", "category": "Class B", "expiryDate": "2026-03-20", "contact": "+1-555-0144", "safetyScore": 95, "status": "Available" },
+    { "licenseNumber": "DL-118273", "name": "Bob Miller", "category": "Class C", "expiryDate": "2027-01-10", "contact": "+1-555-0182", "safetyScore": 68, "status": "Suspended" },
+    { "licenseNumber": "DL-554829", "name": "John Doe", "category": "Class A", "expiryDate": "2025-06-01", "contact": "+1-555-0122", "safetyScore": 88, "status": "Available" },
+    { "licenseNumber": "DL-773829", "name": "Elena Fisher", "category": "Class C", "expiryDate": "2028-12-05", "contact": "+1-555-0155", "safetyScore": 99, "status": "Off Duty" }
+  ],
+  "trips": [
+    { "id": "TRIP-1001", "source": "Warehouse A (Chicago)", "destination": "Distribution Center B (Detroit)", "vehicleReg": "VAN-05", "driverLicense": "DL-837482", "driverName": "Alex Mercer", "cargoWeight": 420, "distance": 450, "status": "Completed", "revenue": 1200.00, "fuelConsumed": 45.00, "endOdometer": 12500, "date": "2026-07-01", "recipientName": "John Smith", "recipientPhone": "+1-555-0210", "deliveryAddress": "789 Detroit St, Detroit, MI", "packageCategory": "Standard Cargo" },
+    { "id": "TRIP-1002", "source": "Port of Seattle", "destination": "Logistics Hub (Spokane)", "vehicleReg": "TRK-12", "driverLicense": "DL-928472", "driverName": "Sarah Connor", "cargoWeight": 4500, "distance": 350, "status": "Completed", "revenue": 4500.00, "fuelConsumed": 120.00, "endOdometer": 85000, "date": "2026-07-05", "recipientName": "Alice Johnson", "recipientPhone": "+1-555-0211", "deliveryAddress": "456 Spokane Way, Spokane, WA", "packageCategory": "Cold Chain" },
+    { "id": "TRIP-1003", "source": "Dallas Depot", "destination": "Austin Retail Outlet", "vehicleReg": "SED-01", "driverLicense": "DL-837482", "driverName": "Alex Mercer", "cargoWeight": 150, "distance": 300, "status": "Completed", "revenue": 600.00, "fuelConsumed": 21.00, "endOdometer": 45000, "date": "2026-07-09", "recipientName": "Robert Brown", "recipientPhone": "+1-555-0212", "deliveryAddress": "123 Austin Ave, Austin, TX", "packageCategory": "Fragile" },
+    { "id": "TRIP-1004", "source": "Boston Port", "destination": "New York Warehouse", "vehicleReg": "VAN-05", "driverLicense": "DL-837482", "driverName": "Alex Mercer", "cargoWeight": 300, "distance": 350, "status": "Draft", "revenue": 950.00, "fuelConsumed": 0.00, "endOdometer": 0, "date": "2026-07-11", "recipientName": "Emily Davis", "recipientPhone": "+1-555-0213", "deliveryAddress": "999 New York Blvd, New York, NY", "packageCategory": "Standard Cargo" }
+  ],
+  "maintenance_logs": [
+    { "id": "MNT-2001", "vehicleReg": "SUV-08", "serviceType": "Brake Pad Replacement & Engine Oil Change", "cost": 450.00, "startDate": "2026-07-10", "endDate": null, "status": "Active", "notes": "Squeaking noises reported by driver Bob. Replaced front brake pads and flushed engine oil." },
+    { "id": "MNT-2002", "vehicleReg": "VAN-05", "serviceType": "Routine 10k Oil Change & Filter Renewal", "cost": 150.00, "startDate": "2026-06-15", "endDate": "2026-06-16", "status": "Completed", "notes": "Standard logbook maintenance." }
+  ],
+  "expenses": [
+    { "id": "EXP-4001", "vehicleReg": "VAN-05", "type": "Fuel", "amount": 72.00, "date": "2026-07-02", "notes": "Fuel fillup for TRIP-1001" },
+    { "id": "EXP-4002", "vehicleReg": "VAN-05", "type": "Maintenance", "amount": 150.00, "date": "2026-06-16", "notes": "Routine 10k service cost" },
+    { "id": "EXP-4003", "vehicleReg": "TRK-12", "type": "Fuel", "amount": 216.00, "date": "2026-07-06", "notes": "Fuel fillup for TRIP-1002" },
+    { "id": "EXP-4004", "vehicleReg": "TRK-12", "type": "Tolls", "amount": 45.00, "date": "2026-07-05", "notes": "Highway Toll charges" },
+    { "id": "EXP-4005", "vehicleReg": "SED-01", "type": "Fuel", "amount": 33.60, "date": "2026-07-09", "notes": "Fuel fillup for TRIP-1003" },
+    { "id": "EXP-4006", "vehicleReg": "SUV-08", "type": "Maintenance", "amount": 450.00, "date": "2026-07-10", "notes": "Active brake job charges" }
+  ],
+  "documents": [
+    { "id": "DOC-5001", "vehicleReg": "VAN-05", "name": "Registration_Cert.pdf", "type": "Registration", "uploadDate": "2026-01-10", "size": "1.2 MB" },
+    { "id": "DOC-5002", "vehicleReg": "VAN-05", "name": "Insurance_Policy_2026.pdf", "type": "Insurance", "uploadDate": "2026-01-12", "size": "2.4 MB" },
+    { "id": "DOC-5003", "vehicleReg": "TRK-12", "name": "Annual_Inspection_Report.pdf", "type": "Inspection", "uploadDate": "2026-03-05", "size": "850 KB" }
+  ],
+  "notifications": [
+    { "id": "NOT-001", "title": "License Renewal Required", "message": "Driver John Doe (DL-554829) license expired on 2025-06-01.", "type": "danger", "date": "2026-07-11", "is_read": false },
+    { "id": "NOT-002", "title": "License Expiring Soon", "message": "Driver Sarah Connor (DL-928472) license expires on 2026-03-20.", "type": "warning", "date": "2026-07-11", "is_read": false },
+    { "id": "NOT-003", "title": "Scheduled Maintenance Lockout", "message": "Vehicle SUV-08 status changed to In Shop for active maintenance log.", "type": "info", "date": "2026-07-10", "is_read": true }
+  ]
+}
