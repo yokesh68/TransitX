@@ -225,11 +225,11 @@ export default function App() {
           </div>
           <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '10px' }}>Secure Login</button>
           {loginError && <div style={{ color: 'red', marginTop: '12px', textAlign: 'center' }}>{loginError}</div>}
-          <div className="login-credentials-box">
+          {/* <div className="login-credentials-box">
             <h4>Quick Demo Access Profiles</h4>
             <p><strong>Fleet Manager:</strong> manager@transitops.com / admin123</p>
             <p><strong>Driver:</strong> driver@transitops.com / driver123</p>
-          </div>
+          </div> */}
         </form>
       </div>
     );
