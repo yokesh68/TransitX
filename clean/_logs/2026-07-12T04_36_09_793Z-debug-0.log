@@ -10,3 +10,9 @@
 9 verbose logfile logs-max:10 dir:C:\Users\yokes\Desktop\TransitX\TransitX\clean\_logs\2026-07-12T04_36_09_793Z-
 10 verbose logfile C:\Users\yokes\Desktop\TransitX\TransitX\clean\_logs\2026-07-12T04_36_09_793Z-debug-0.log
 11 silly logfile done cleaning log files
+12 verbose cwd C:\Users\yokes\Desktop\TransitX\TransitX\TransitX
+13 verbose os Windows_NT 10.0.26200
+14 verbose node v24.12.0
+15 verbose npm  v11.6.2
+16 verbose exit 1
+17 verbose code 1
